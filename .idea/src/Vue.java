@@ -38,17 +38,17 @@ public class Vue extends JFrame
                     new ImageIcon(ImageIcon.class.getResource("img/scores/Score_Rouge_Mini_9.png")),
                     new ImageIcon(ImageIcon.class.getResource("img/scores/Score_Rouge_Mini_10.png"))  
             };
-    private ImageIcon empty;
+    private static final ImageIcon empty = new ImageIcon(ImageIcon.class.getResource(("img/Empty.jpg")));
 
     public Vue (Model model)
     {
-        initAttributs();
+        initAttribut();
         setSize(1100,700);
         setVisible(true);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-    private void initAttributs()
+    private void initAttribut()
     {
         
     }
