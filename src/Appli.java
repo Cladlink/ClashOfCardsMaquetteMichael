@@ -10,7 +10,7 @@ public class Appli
             public void run()
             {
                 Model model = new Model();
-
+                ControlGroup controler = new ControlGroup(model);
             }
         });
     }
