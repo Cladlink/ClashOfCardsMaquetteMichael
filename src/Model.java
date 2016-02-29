@@ -62,7 +62,7 @@ public class Model
                         flip(plateau, cartesJ2[i], x, y+1);
                     }
                     else if(plateau[x][y+1].getIcon().toString().contains(cartesJ1[i].getAdresseRouge())
-                            && cartesJ2[i].getWest() < cartesJ1[carteJouee].getEast())
+                            && cartesJ1[i].getWest() < cartesJ1[carteJouee].getEast())
                     {
                         flip(plateau, cartesJ1[i], x, y+1);
                     }
@@ -80,7 +80,7 @@ public class Model
                         flip(plateau, cartesJ2[i], x, y-1);
                     }
                     else if (plateau[x][y-1].getIcon().toString().contains(cartesJ1[i].getAdresseRouge())
-                        && cartesJ2[i].getEast() < cartesJ1[carteJouee].getWest())
+                        && cartesJ1[i].getEast() < cartesJ1[carteJouee].getWest())
                     {
                         flip(plateau, cartesJ1[i], x, y-1);
                     }
@@ -97,7 +97,7 @@ public class Model
                         flip(plateau, cartesJ2[i], x+1, y);
                     }
                     else if(plateau[x+1][y].getIcon().toString().contains(cartesJ1[i].getAdresseRouge())
-                            && cartesJ2[i].getNorth() < cartesJ1[carteJouee].getSouth())
+                            && cartesJ1[i].getNorth() < cartesJ1[carteJouee].getSouth())
                     {
                         flip(plateau, cartesJ1[i], x+1, y);
 
@@ -116,7 +116,7 @@ public class Model
                     }
 
                     else if (plateau[x-1][y].getIcon().toString().contains(cartesJ1[i].getAdresseRouge())
-                            && cartesJ2[i].getSouth() < cartesJ1[carteJouee].getNorth())
+                            && cartesJ1[i].getSouth() < cartesJ1[carteJouee].getNorth())
                     {
                         flip(plateau, cartesJ1[i], x-1, y);
                     }
@@ -145,7 +145,7 @@ public class Model
                         flip(plateau, cartesJ1[i], x, y+1);
                     }
                     else if (plateau[x][y+1].getIcon().toString().contains(cartesJ2[i].getAdresseBleue())
-                            && cartesJ1[i].getWest() < cartesJ2[carteJouee].getEast())
+                            && cartesJ2[i].getWest() < cartesJ2[carteJouee].getEast())
                     {
                         flip(plateau, cartesJ2[i], x, y+1);
 
@@ -163,7 +163,7 @@ public class Model
                         flip(plateau, cartesJ1[i], x, y-1);
                     }
                     else if (plateau[x][y-1].getIcon().toString().contains(cartesJ2[i].getAdresseBleue())
-                            && cartesJ1[i].getEast() < cartesJ2[carteJouee].getWest())
+                            && cartesJ2[i].getEast() < cartesJ2[carteJouee].getWest())
                     {
                         flip(plateau, cartesJ2[i], x, y-1);
                     }
@@ -180,7 +180,7 @@ public class Model
                         flip(plateau, cartesJ1[i], x+1, y);
                     }
                     else if( plateau[x+1][y].getIcon().toString().contains(cartesJ2[i].getAdresseBleue())
-                            && cartesJ1[i].getNorth() < cartesJ2[carteJouee].getSouth())
+                            && cartesJ2[i].getNorth() < cartesJ2[carteJouee].getSouth())
                     {
                         flip(plateau, cartesJ2[i], x+1, y);
                     }
@@ -198,7 +198,7 @@ public class Model
                         flip(plateau, cartesJ1[i], x-1, y);
                     }
                     else if (plateau[x-1][y].getIcon().toString().contains(cartesJ2[i].getAdresseBleue())
-                            &&  cartesJ1[i].getSouth() < cartesJ2[carteJouee].getNorth())
+                            &&  cartesJ2[i].getSouth() < cartesJ2[carteJouee].getNorth())
                     {
                         flip(plateau, cartesJ2[i], x-1, y);
                     }
